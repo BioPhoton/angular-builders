@@ -15,5 +15,5 @@ install:
  - yarn
  - lerna bootstrap
 script:
-  - lerna run build
-  - lerna run ci
+  - npm run bootstrap:packages
+  - npm run ci
