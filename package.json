@@ -13,7 +13,7 @@
   },
   "scripts": {
     "bootstrap:packages": "npx lerna bootstrap --scope \\@angular-builders\\/*",
-    "bootstrap:examples": "npx lerna run install --ignore \\@angular-builders\\/*",
+    "bootstrap:examples": "npx lerna exec npm install --ignore \\@angular-builders\\/*",
     "build:packages": "npx lerna run build --scope \\@angular-builders\\/*",
     "ci": "npm run build:packages && ./scripts/run-ci.sh",
     "lerna": "lerna",
