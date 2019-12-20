@@ -12,7 +12,7 @@
       "message": "ci(release): publish"
     },
     "bootstrap": {
-      "noCi": true 
+      "ci": false 
     }
   },
   "version": "independent"
