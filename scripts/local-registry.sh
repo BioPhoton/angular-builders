@@ -28,5 +28,5 @@ function stopLocalRegistry {
 }
 
 function publishToLocalRegistry {
-  npx lerna publish prerelease --yes --force-publish=* --no-git-tag-version --no-commit-hooks --no-push --exact --dist-tag=latest
+  npx lerna publish prerelease --yes --force-publish=* --no-git-tag-version --no-git-reset --no-commit-hooks --no-push --exact --dist-tag=latest
 }
