@@ -14,7 +14,7 @@ function startLocalRegistry {
   grep -q 'http address' <(tail -f $tmp_registry_log)
 
   # Set registry to local registry
-  npm config set registry "$custom_registry_url"
+  npm config -g set registry "$custom_registry_url"
   npm config get registry
   yarn config set registry "$custom_registry_url"
 
@@ -24,7 +24,7 @@ function startLocalRegistry {
 
 function stopLocalRegistry {
   # Restore the original NPM and Yarn registry URLs and stop Verdaccio
-  npm config set registry "$original_npm_registry_url"
+  npm config -g set registry "$original_npm_registry_url"
   yarn config set registry "$original_yarn_registry_url"
 }
 
