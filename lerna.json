@@ -1,6 +1,6 @@
 {
-  "npmClient": "npm",
-  "npmClientArgs": ["--no-package-lock"],
+  "npmClient": "yarn",
+  "npmClientArgs": ["--no-lockfile"],
   "packages": [
     "packages/*",
     "packages/*/examples/*",
