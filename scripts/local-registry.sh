@@ -17,6 +17,7 @@ function startLocalRegistry {
   npm config -g set registry "$custom_registry_url"
   npm config get registry
   yarn config set registry "$custom_registry_url"
+  yarn config get registry
 
   # Login so we can publish packages
   (cd && npx npm-auth-to-token@1.0.0 -u user -p password -e user@example.com -r "$custom_registry_url")
@@ -30,5 +31,6 @@ function stopLocalRegistry {
 
 function publishToLocalRegistry {
   npm config get registry
+  yarn config get registry
   npx lerna publish prerelease --yes --force-publish=* --no-git-tag-version --canary --no-git-reset --no-commit-hooks --no-push --exact --dist-tag=latest
 }
