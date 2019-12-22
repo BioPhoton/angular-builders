@@ -44,7 +44,7 @@ startLocalRegistry "$root_path"/scripts/verdaccio.yaml
 
 publishToLocalRegistry
 
-npm run bootstrap:examples
+yarn bootstrap:examples
 
 npx lerna run ci
 
