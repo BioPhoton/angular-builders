@@ -27,6 +27,9 @@ uplinks:
       keepAlive: true
       maxSockets: 40
       maxFreeSockets: 10
+      
+server:
+  keepAliveTimeout: 0
 
 packages:
   '@*/*':
