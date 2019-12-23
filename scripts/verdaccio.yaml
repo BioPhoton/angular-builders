@@ -25,6 +25,7 @@ uplinks:
     timeout: 60s
     agent_options:
       keepAlive: true
+      keepAliveMs: 3000
       maxSockets: 40
       maxFreeSockets: 10
 
